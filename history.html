@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>떡볶이의 이모저모</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <style media="screen">
+      * {
+        margin : 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:link {
+        opacity: 0.8;
+        color: #E0634F;
+      }
+      a:hover {
+        opacity: 1.0;
+        color: #E0634F;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li {
+        list-style-type: none;
+      }
+      body {
+        font-size: 100%;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #444444;
+        /*background-color: #f4e4de;*/
+        margin: 0 auto;
+        background-color: #f5f5f5;
+      }
+      .clear {/*float속성값 해제*/
+        clear: both;
+      }
+
+      /*상단 헤더*/
+      header { /*상단 헤더*/
+        width: 1350px;
+        height: 120px;
+        padding: 20px;
+        margin: 0 auto; /*박스를 웹 페이지 중앙 배치*/
+        /*border: solid 1px red;*/
+      }
+      table, tr, td, th {
+        border-collapse: collapse;
+      }
+      #logo {
+        float: left;
+        margin: 30px 0 0 10px;
+        /*border: solid 1px red;*/
+      }
+      #menus {
+        /*float: right;*/
+        /*border: solid 1px red;*/
+      }
+      #top_menu {
+        text-align: right;
+        margin-top: 50px;
+        margin-right: 40px;
+        float: right;
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 100%;
+        color: #E0634F;
+        font-weight: bold;
+        /*border: solid 1px red;*/
+      }
+      #main_menu {
+        margin-top: 50px;
+        margin-left: 10px;
+        float: left;
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 100%;
+        color: #E0634F;
+        font-weight: bold;
+        /*border: solid 1px red;*/
+      }
+      #main_menu li {
+        display: inline;
+        margin-left: 40px;
+      }
+      #top_menu li {
+        display: inline;
+        margin-left: 10px;
+      }
+
+      /*메인이미지*/
+      #main_img {
+        /*퍼센트로 값을 주게 되면 반응형으로 할 수 있음, 메인 이미지는 꽉 차 있기 때문에 100%*/
+        /*사진 손보기*/
+        width: 100%;
+        height: 530px;
+        background-image: url('./tbk.jpg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        /*margin-top: 20px;*/
+        /*border: solid 1px red;*/
+      }
+
+      /*서브메뉴, 메인 콘텐츠*/
+      #contents {
+        width: 100%;
+        margin: 0 auto;
+        float:left;
+        /*border: solid 1px red;*/
+      }
+      #sub_menu {
+        font-family: 'Nanum Myeongjo', serif;
+        width: 234px;
+        float: left;
+        margin-top: 50px;
+        margin-left: 100px;
+        /*border: solid 1px red;*/
+      }
+      #sub_menu h3 {
+        font-size: 17px;
+        color: #f4e4de;
+        padding: 12px;
+        background-color: #E0634F;
+      }
+      #sub_menu li {
+        font-family: 'Noto Sans KR', sans-serif;
+        padding: 12px;
+        border-bottom: solid 1px #cccccc;
+      }
+      #main_contents {
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-left: 50px;
+        z-index: 5;
+        float: left;
+        /*border: solid 1px red;*/
+      }
+      #main_contents h3 {
+        font-family: 'Nanum Myeongjo', serif;
+        width: 200px;
+        font-size: 120%;
+        margin-top: -80px;
+        padding : 8px;
+        background-color: #dbdbdb;
+        border: solid 1px #ea8373;
+        color: #E0634F;
+        z-index: 3;
+      }
+      #main_contents p {
+        margin-top: 10px;
+        line-height: 180%;
+      }
+      #main_contents #figure {
+        margin-top: 30px;
+        text-align: center;
+      }
+      #main_contents li {
+        padding: 5px;
+      }
+      #contents_image {
+        background-repeat: no-repeat;
+        background-position: top center;
+        float: left;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+      }
+      #border {
+        border-bottom: solid 1px #ea8373;
+        width: 1000px;
+        margin-top: 50px;
+      }
+      #button {
+        background-color: #dbdbdb;
+        color: white;
+        width: 100px;
+        height: 20px;
+        padding: 8px;
+        font-size: 80%;
+        font-weight: bold;
+        font-family: 'Nanum Myeongjo', serif;
+        margin-top: 10px;
+      }
+      #image {
+        float: left;
+        opacity: 1.0;
+
+      }
+      #imgage:hover {
+        opacity: 0.4;}
+
+      /*푸터*/
+      footer {
+        width: 100%
+        border: solid 1px red;
+        height: 150px;
+        margin-top: 30px;
+        background-color: #2c2a29;
+      }
+      #footer_box {
+        width: 1140px;
+        height: 150px;
+        margin: 0 auto;
+        /*border: solid 1px green;*/
+      }
+      #footer_logo {
+        float: left;
+        margin: 50px 0 0 30px;
+        /*border: solid 1px red;*/
+      }
+      #address {
+        float: right;
+        margin: 50px 30px 0 0;
+        color: white;
+        font-size: 70%;
+        /*border: solid 1px red;*/
+      }
+      #image {
+        margin-top: 30px;
+        margin-left: 110px;
+      }
+      #image2 {
+        margin-top: 30px;
+        margin-left: -10px;
+      }
+      .color {
+        color: #E0634F;
+        font-weight: bold;
+      }
+      .color2{
+        color: #E0634F;
+        font-weight: bold;
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 90%;
+      }
+      .color3 {
+        font-weight: bold;
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 90%;
+      }
+      /*뷰포트*/
+      .c1 {width: 8.33%; float: left; padding: 15px;}
+      .c2 {width: 16.66%; float: left; padding: 15px;}
+      .c3 {width: 25%; float: left; padding: 15px;}
+      .c4 {width: 33.33%; float: left; padding: 15px;}
+      .c5 {width: 41.66%; float: left; padding: 15px;}
+      .c6 {width: 50%; float: left; padding: 15px;}
+      .c7 {width: 58.33%; float: left; padding: 15px;}
+      .c8 {width: 66.66%; float: left; padding: 15px;}
+      .c9 {width: 75%; float: left; padding: 15px;}
+      .c10 {width: 83.33%; float: left; padding: 15px;}
+      .c11 {width: 91.66%; float: left; padding: 15px;}
+      .c12 {width: 100%; float: left; padding: 15px;}
+    </style>
+  </head>
+ <body>
+  <!--섹션, 내브 등 다시 알아보기-->
+  <header>
+    <div id="logo" >
+      <a href='./index.html'><img src='./logo.png' width='100' title='떡볶이의 이모저모'></a>
+    </div>
+    <nav id="menus">
+      <ul id='main_menu'>
+        <li><a href='./imo.html'>이모</a></li>
+        <li><a href='./menu.html'>종류</a></li>
+        <li><a href='./brand.html'>선호 브랜드</a></li>
+        <li><a href='./gallery.html'>떡볶이 갤러리</a></li>
+        <li><a href='./call.html'>고객센터</a></li>
+      </ul>
+      <ul id='top_menu'>
+        <li><a href='./login.html'>로그인</a></li>
+        <li><a href='./join.html'>회원가입</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id='main_img'>
+  </section>
+
+  <section id='contents'>
+    <nav id='sub_menu'>
+      <h3>이모</h3>
+        <ul>
+          <li> <a href='./imo.html'>이모?</a></li>
+          <li> <a href='./history.html'>떡볶이의 유래</a></li>
+          <li> <a href='./new.html'>새 소식</a></li>
+          <li> <a href='./import.html'>공지사항</a></li>
+        </ul>
+      </nav>
+    <div id="main_contents" >
+      <center><h3>떡볶이의 유래</h3></center>
+      <div><br>
+        <p><span class="color">조선에서 궁중요리로 간장에 고기와 채소와 볶은 떡을 버무려먹는 간장 떡볶이로 먹었다.</span><br>
+        유래를 따지면 대체로 떡찜에서 발전된 형태로 요리로 보고있다. 일제강점기 시절에도 있었던 요리지만 전란 등을 거치며 현대의 떡볶이로 바뀌었다.<br>
+        현대의 떡볶이는 6.25 전쟁 휴전 이후 완성된 형태로 남한 한정 요리이다.<br>
+        북한에는 떡볶이가 대중적인 간식이나 음식이 아니며 연변에 사는 조선족들이나 남한영화와 드라마 시청으로 떡볶이라는 음식 자체가
+        알려지기는 했지만 익숙하지 않기 때문에 해먹는 사람은 극소수다.<br><br>
+
+        <span class="color">고추장 떡볶이는 신당동 떡볶이집으로 유명한 마복림 할머니가 만들었다.</span>
+        관련 일화를 보면 6.25 전쟁 휴전 직후인 1953년도 중국집 개업식에 참석했다 실수로 짜장면에 떡을 빠뜨렸는데,
+        춘장이 묻은 떡이 의외로 맛이 좋아 고추장 떡볶이를 생각하게 되고, 같은 해 신당동에서 노점상으로 떡볶이 장사를 시작했다.<br>
+        처음에는 연탄불 위에 양은 냄비를 올려놓고, 떡과 야채, 고추장, 춘장 등을 버무려 팔았다고 한다.
+        그러다가 지금의 떡볶이의 형태로 바뀌고, 어느날 여학생이 라면을 사들고 와서 같이 끓여달라고 요청한 것이 시초가 되어
+        라면 등의 각종 사리를 팔기 시작하였다.<br>
+        70년대 초반까지는 신당동만의 명물이었으나 당시 임국희의 여성 살롱이라는 인기 라디오 방송에 소개되면서
+        전국적으로 떡볶이집이 생겨나기 시작했다.
+        <br> <small>출처: 나무위키 https://namu.wiki/w/%EB%96%A1%EB%B3%B6%EC%9D%B4 </small></p> <br>
+        <p>
+        </div>
+      </div>
+    </section>
+  <div class="clear"></div> <!--float 속성 해제-->
+
+  <footer>
+    <div id="footer_box">
+      <div id="footer_logo">
+        <img src='./logo1.png' width='130'>
+      </div>
+      <ul id=address>
+        <li>서울시 노원구 노원로 28길 (상계동) 우: 01705</li>
+        <li>TEL : 010-6261-2601 ㅣ Email : 0505064@naver.com</li>
+        <li>COPYRIGHT &copy; 계원예술대학교 디지털미디어디자인</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

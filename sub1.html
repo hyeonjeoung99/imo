@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이모</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <style media="screen">
+      * {
+        margin : 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:link {
+        opacity: 0.8;
+        color: #E0634F;
+      }
+      a:hover {
+        opacity: 1.0;
+        color: #E0634F;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li {
+        list-style-type: none;
+      }
+      body {
+        font-size: 100%;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #444444;
+        background-color: #f4e4de;
+      }
+      .clear {/*float속성값 해제*/
+        clear: both;
+      }
+
+      /*상단 헤더*/
+      header { /*상단 헤더*/
+        width: 1350px;
+        height: 100px;
+        padding: 20px;
+        margin: 0 auto; /*박스를 웹 페이지 중앙 배치*/
+        /*border: solid 1px red;*/
+      }
+      #logo {
+        float: left;
+        margin: 30px 0 0 10px;
+        /*border: solid 1px red;*/
+      }
+      #menus {
+        float: right;
+        /*border: solid 1px red;*/
+      }
+      #top_menu {
+        text-align: right;
+        margin-top: 20px;
+        color: #ea8373;
+        /*border: solid 1px red;*/
+      }
+      #main_menu {
+        margin-top: 20px;
+        margin-left: 40px;
+        float: left;
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 16px;
+        color: #E0634F;
+        font-weight: bold;
+        /*border: solid 1px red;*/
+      }
+      #main_menu li {
+        display: inline;
+        margin-left: 50px;
+      }
+
+      /*메인이미지*/
+      #main_img {
+        /*퍼센트로 값을 주게 되면 반응형으로 할 수 있음, 메인 이미지는 꽉 차 있기 때문에 100%*/
+        /*사진 손보기*/
+        width: 100%;
+        height: 400px;
+        background-image: url('TBK.jpg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        margin-top: 20px;
+        /*border: solid 1px red;*/
+      }
+
+      /*서브메뉴, 메인 콘텐츠*/
+      #contents {
+        width: 100%;
+        margin: 0 auto;
+        /*border: solid 1px red;*/
+      }
+      #sub_menu {
+        font-family: 'Nanum Myeongjo', serif;
+        width: 234px;
+        float: left;
+        margin-top: 50px;
+        margin-left: 100px;
+        /*border: solid 1px red;*/
+      }
+      #sub_menu h3 {
+        font-size: 17px;
+        color: #f4e4de;
+        padding: 12px;
+        background-color: #E0634F;
+      }
+      #sub_menu li {
+        font-family: 'Noto Sans KR', sans-serif;
+        padding: 12px;
+        border-bottom: solid 1px #cccccc;
+      }
+      #main_contents {
+        width: 1000px;
+        float: left;
+        margin-top: 60px;
+        margin-left: 50px;
+        /*border: solid 1px red;*/
+      }
+      #main_contents h3 {
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 20px;
+        padding-bottom: 8px;
+        border-bottom: solid 1px #ea8373;
+        color: #E0634F;
+      }
+      #main_contents p {
+        margin-top: 30px;
+        line-height: 180%;
+      }
+      #main_contents #figure {
+        margin-top: 30px;
+        text-align: center;
+      }
+      #main_contents li {
+        padding: 5px;
+      }
+
+      /*푸터*/
+      footer {
+        width: 100%
+        border: solid 1px red;
+        height: 150px;
+        margin-top: 30px;
+        background-color: #2c2a29;
+      }
+      #footer_box {
+        width: 1140px;
+        height: 150px;
+        margin: 0 auto;
+        /*border: solid 1px green;*/
+      }
+      #footer_logo {
+        float: left;
+        margin: 50px 0 0 30px;
+        /*border: solid 1px red;*/
+      }
+      #address {
+        float: right;
+        margin: 50px 30px 0 0;
+        color: white;
+        /*border: solid 1px red;*/
+      }
+
+      .color {
+        color: #E0634F;
+        font-weight: bold;
+      }
+      /*뷰포트*/
+      .c1 {width: 8.33%; float: left; padding: 15px;}
+      .c2 {width: 16.66%; float: left; padding: 15px;}
+      .c3 {width: 25%; float: left; padding: 15px;}
+      .c4 {width: 33.33%; float: left; padding: 15px;}
+      .c5 {width: 41.66%; float: left; padding: 15px;}
+      .c6 {width: 50%; float: left; padding: 15px;}
+      .c7 {width: 58.33%; float: left; padding: 15px;}
+      .c8 {width: 66.66%; float: left; padding: 15px;}
+      .c9 {width: 75%; float: left; padding: 15px;}
+      .c10 {width: 83.33%; float: left; padding: 15px;}
+      .c11 {width: 91.66%; float: left; padding: 15px;}
+      .c12 {width: 100%; float: left; padding: 15px;}
+    </style>
+  </head>
+ <body>
+
+  <header>
+    <div id="logo">
+      <a href='main.html'><img src='logo.png' width='100' title='김떡볶'></a>
+    </div>
+    <nav id="menus">
+      <div id="top_menu">
+        로그인 ㅣ 회원가입
+      </div>
+      <ul id='main_menu'>
+        <li><a href='index_21861119.html'>이모</a></li>
+        <li><a href='menu.html'>종류</a></li>
+        <li><a href='brand.html'>선호 브랜드</a></li>
+        <li><a href='comu.html'>떡볶이 갤러리</a></li>
+        <li><a href='call.html'>고객센터</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id='main_img'>
+  </section>
+
+  <section id='contents'>
+    <nav id='sub_menu'>
+      <h3>김떡볶</h3>
+      <ul>
+        <li> <a href='index_21861119.html'>김떡볶</a></li>
+        <li> <a href='history.html'>떡볶이의 유래</a></li>
+        <li> <a href='new.html'>새 소식</a></li>
+        <li> <a href='im.html'>공지사항</a></li>
+      </ul>
+    </nav>
+    <div id="main_contents">
+      <h3>김떡볶</h3>
+      <div id="figure">
+        <p><b><span class='color'>&quot;김떡볶&quot;</span>에서는 다음과 같은 컨텐츠를 접할 수 있습니다.</b></p><br>
+        <ul>
+          <li>1. 여러가지 떡볶이 메뉴 소개</li>
+          <li>2. 떡볶이 브랜드 소개</li>
+          <li>3. 떡볶이의 떡볶이를 위한 떡볶이에 의한 커뮤니티 제공</li>
+        </ul>
+          <br>
+        <img src='BBKI.jpg' width="750">
+      </div>
+      <p><span class='color'>&quot;김떡볶&quot;</span> 은 떡볶이를 사랑하는 사람들을 위해 만들어진 페이지 입니다.
+        한국 전통 이미지를 강조한 디자인에 떡볶이의 붉은 색상을 곁들여 만들었습니다.
+        <br>떡볶이 처돌이가 만든 페이지로, 동류인 떡볶이 사랑맨인 이들에게 세 가지를 약속합니다.</p><br>
+      <ul>
+        <li>1. 여러 종류의 떡볶이를 쉽게 접할 수 있게 한다.</li>
+        <li>2. 떡볶이를 좋아하는 사람들만의 커뮤니티를 제공한다.</li>
+        <li>3. &quot;김떡볶&quot;만의 자체 이벤트를 통해 더 많은 사람들에게 떡볶이의 사랑스러움을 전파한다.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="clear"></div> <!--float 속성 해제-->
+
+  <footer>
+    <div id="footer_box">
+      <div id="footer_logo">
+        <img src='logo1.png' width='130'>
+      </div>
+      <ul id=address>
+        <li>서울시 노원구 노원로 28길 (상계동) 우: 01705</li>
+        <li>TEL : 010-0000-0000 ㅣ Email : 0505064@naver.com</li>
+        <li>COPYRIGHT &copy; 계원예술대학교 디지털미디어디자인</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
